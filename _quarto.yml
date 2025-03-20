@@ -6,9 +6,8 @@ website:
   title: "Ciência de Dados I"
   navbar:
     left:
-      - href: script.qmd
+      - href: index.qmd
         text: Home
-      - about.qmd
 
 format: 
   html: 
