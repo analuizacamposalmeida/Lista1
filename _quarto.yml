@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Ciência de Dados I"
+  navbar:
+    left:
+      - href: script.qmd
+        text: Home
+      - about.qmd
+
+format: 
+  html: 
+    code-fold: true # -----> code-fold: true para "ocultar" o bloco de códigos
+    theme: 
+      light: [pulse,custom.css] # Tema modo claro
+      dark: [cyborg,custom.css] # Tema modo escuro
+title-block-banner: true # -----> Estilo de banner no topo do documento
+    

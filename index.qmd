@@ -1,0 +1,51 @@
+---
+title: "Análise de Dados I" # -----> Título
+author: "Ana Luiza Campos, Guilherme Augusto, Vitória Barbosa" # -----> Autoria
+date: "2025-03-20" # -----> Data de publicação
+date-format: short # -----> Formato de data curto: dd/mm/aaaa
+lang: pt # -----> Linguagem: português
+format: 
+  html: 
+    code-fold: true
+    theme: 
+      light: [pulse,custom.css] # Tema modo claro
+      dark: [cyborg,custom.css] # Tema modo escuro
+title-block-banner: true # -----> Estilo de banner no topo do documento
+---
+
+```{r}
+#| echo: false
+load(file="Lista 1 - DS.RData")
+```
+
+# **Lista 01:**
+
+Nessa tarefa, tem-se como estudo uma seleção de 15917 imóveis da cidade de New York usados como Airbnb, com dados como: tipo de imóvel, preço da diária, mínimo de noites, número de reviews, nota, número de quartos, número de camas, etc. A partir desse,nota-se que a maioria dos anúncios Airbnb são de casas inteiras, muitas das quais são alugadas durante todo o ano – perturbando a habitação e as comunidades. Dessa forma, objetiva-se analisar as estatísticas dos dados disponibilizados e seus impactos.
+
+Abaixo, tem-se a estrutura dos dados
+
+```{r}
+#| label: Estrutura de Dados
+#| echo: false
+#| tbl-cap: Estrutura do Dataframe.
+
+knitr::kable(str(dados), row.names = FALSE)
+```
+
+Após selecionar de forma aleatória uma amostra com 2000 casos do dataframe dados, utilizou-se como “semente” o identificador do nosso grupo: K. Tudo isso com o objetivo de comparar os resultados do Dataframe original com uma amostra de casos aleatórios.
+
+```{r}
+#| echo: false
+#| label: summary_dados
+#| tbl-cap: Resumo das Variáveis do Dataframe Dados
+
+knitr::kable(summary(dados), row.names = FALSE)
+```
+
+```{r}
+#| echo: false
+#| label: summary_amostra
+#| tbl-cap: Resumo das variáveis da amostra coletada aleatoriamente
+
+knitr::kable(summary(amostra), row.names = FALSE)
+```
