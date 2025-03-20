@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introdução" class="level2">
 <h2 class="anchored" data-anchor-id="introdução"><strong>Introdução</strong></h2>
-<p>Nessa tarefa, tem-se como estudo uma seleção de 15917 imóveis da cidade de New York usados como Airbnb, com dados de como: tipo de imóvel, preço da diária, mínimo de noites, número de reviews, nota, número de quartos, número de camas, etc. A partir desse,nota-se que a maioria dos anúncios Airbnb são de casas inteiras, muitas das quais são alugadas durante todo o ano – perturbando a habitação e as comunidades. Dessa forma, objetiva-se analisar as estatísticas dos dados 15917 e seus impactos.</p>
+<p>Nessa tarefa, tem-se como estudo uma seleção de 15917 imóveis da cidade de New York usados como Airbnb, com dados como: tipo de imóvel, preço da diária, mínimo de noites, número de reviews, nota, número de quartos, número de camas, etc. A partir desse, nota-se que a maioria dos anúncios Airbnb são de casas inteiras, muitas das quais são alugadas durante todo o ano – perturbando a habitação e as comunidades. Dessa forma, objetiva-se analisar as estatísticas dos dados 15917 e seus impactos.</p>
 </section>
 <section id="base-de-dados" class="level2">
 <h2 class="anchored" data-anchor-id="base-de-dados">Base de dados</h2>
@@ -171,8 +171,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="resumo-da-estatística-descritiva-dos-dados" class="level2">
 <h2 class="anchored" data-anchor-id="resumo-da-estatística-descritiva-dos-dados">Resumo da estatística descritiva dos dados</h2>
-<p>Uma amostra aleatória com 2000 imóveis foi obtida através do comando <code>set.seed(utf8ToInt("K"))</code>, sendo utilizado como “semente” a letra “K”. Com isso, podemos comparar os resumos descritivos da base de dados e da amostra. Nota-se que tendências do dataframe dados se mantém na amostra, como o fato do aluguel do apartamento/casa inteiro ser a maioria das modalidades e Manhattan ser o principal grupo de bairros. O que deixa claro que a amostra, mesmo sendo aleatória, ainda reflete a influência dessas variáveis de destaque.Além disso, percebe-se que, nos resultados da amostra, o valor mínimo da diaria é superior ao visto no dataframe dados,o que pode revelar a escolha de bairros mais bem localizados e, portanto, com diárias mais caras.</p>
-<p>Ademais, vê-se que a amostra retirou alguns dados que eram muito discrepantes, como: no dataframe principal, um imóvel teve 10.000 diárias sendo que a mediana se encontrava em 129 e um imóvel teve 2485 reviews sendo que a sua mediana era 18. Enquanto na amostra, o valor máximo de diárias foi 4129 com mediana 128 e o máximo de reviews foi 1942, sendo a mediana 20. As duas observações trazem uma verdade: os valores mais baixos são a maioria nessas variáveis, uma vezque a mediana é o valor que se encontra exatamente no meio dos dados.</p>
+<p>Uma amostra aleatória com 2000 imóveis foi obtida através do comando <code>set.seed(utf8ToInt("K"))</code>, sendo utilizada como “semente” a letra “K”. Com isso, podemos comparar os resumos descritivos da base de dados e da amostra. Nota-se que tendências do dataframe <em>dados</em> se mantém na amostra, como o fato do aluguel do apartamento/casa inteiro ser a maioria das modalidades e Manhattan ser o principal grupo de bairros. O que deixa claro que a amostra, mesmo sendo aleatória, ainda reflete a influência dessas variáveis de destaque. Além disso, percebe-se que, nos resultados da amostra, o valor mínimo da diaria é superior ao visto no dataframe <em>dados</em>,o que pode revelar a escolha de bairros mais bem localizados e, portanto, com diárias mais caras.</p>
+<p>Ademais, vê-se que a amostra retirou alguns dados que eram muito discrepantes, como: no dataframe principal, um imóvel teve 10.000 diárias sendo que a mediana se encontrava em 129 e um imóvel teve 2485 reviews sendo que a sua mediana era 18. Enquanto na amostra, o valor máximo de diárias foi 4129 com mediana 128 e o máximo de reviews foi 1942, sendo a mediana 20. As duas observações trazem uma verdade: os valores mais baixos são a maioria nessas variáveis, uma vez que a mediana é o valor que se encontra exatamente no meio dos dados.</p>
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -465,7 +465,10 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </div>
 </div>
-<p>Assim, a comprovação da hipótese traçada apenas com a estrutura dos data frames se mantém na amostra, ficando ainda mais aparente quando se nota que o valor relativo da quantidade de casas por grupo de bairro são similares, dando mais uma evidência de que a amostra aleatória converge para a população.A teoria de que Manhattan é destaque entre os demais grupos é dada por sua frequência acumulada nos dois dataframes, uma vez que a diferença entre frequências acumuladas entre ele e seu antecessor é a mais acentuada. Além disso, evidencia-se que as regiões de Staten Island e Bronx precisam de mais investimentos em hotelaria e turismo, pois poucos imóveis se encontram nesse grupos de bairro.</p>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+<p>Assim, a comprovação da hipótese traçada apenas com a estrutura dos dataframes se mantém na amostra, ficando ainda mais aparente quando se nota que os valores relativos da quantidade de casas por grupo de bairro são similares, dando mais uma evidência de que a amostra aleatória converge para a população. A teoria de que Manhattan é destaque entre os demais grupos é dada por sua frequência acumulada nos dois dataframes, uma vez que a diferença entre frequências acumuladas entre ele e seu antecessor é a mais acentuada. Além disso, evidencia-se que as regiões de Staten Island e Bronx precisam de mais investimentos em hotelaria e turismo, pois poucos imóveis se encontram nesse grupos de bairro.</p>
 <p>Com base na tabela de frequência de cada tipo de imovel, é perceptível que o site Airbnb oferta mais casas/apartamentos e quartos privativos do que hotéis e quartos compartilhados. Cerca de 99% são casas/apartamentos ou quartos privados que estão pra alugar no site.</p>
 </section>
 <section id="número-de-imóveis-em-cada-grupo-de-bairro" class="level1">
@@ -656,7 +659,10 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </div>
 </div>
-<p>Por fim, analisando o histograma da quantidade de diárias que os imoveis foram alugados no dataframe original, percebe-se que 97% dos imóveis tiveram menos que 667 diárias. Pela amostra, vem-se que cerca de 92% dos imóveis tiveram menos de 350 diárias. Com a redução da porcentagem, acompanhada da quantidade de diárias, acentua-se a ideia de que amostra tirou os valores discrepantes do database, obtendo uma confiabilidade maior nos resultados.</p>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1"></h2>
+<p>Por fim, analisando o histograma da quantidade de diárias que os imoveis foram alugados no dataframe original, percebe-se que 97% dos imóveis tiveram menos que 667 diárias. Pela amostra, vê-se que cerca de 92% dos imóveis tiveram menos de 350 diárias. Com a redução da porcentagem, acompanhada da quantidade de diárias, acentua-se a ideia de que amostra tirou os valores discrepantes do database, obtendo uma confiabilidade maior nos resultados.</p>
 </section>
 <section id="tabela-diária" class="level2">
 <h2 class="anchored" data-anchor-id="tabela-diária">Tabela Diária</h2>
